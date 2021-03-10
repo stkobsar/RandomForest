@@ -53,10 +53,12 @@ def correlation_matrix(df):
     f, ax = plt.subplots(figsize=(11, 9))
 
     # Generate a custom diverging colormap
-    cmap = sns.diverging_palette(230, 20, as_cmap=True)
+    #cmap = sns.diverging_palette(230, 20, as_cmap=True)
 
     # Draw the heatmap with the mask and correct aspect ratio
-    heatmap = sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+    heatmap = sns.heatmap(corr, mask=mask, vmax=.3, center=0,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5})
-    plt.show()
-    #heatmap.savefig(os.path.join(path, "heatmap_breastcancer.png"))
+    #Save fig
+
+    fig = heatmap.get_figure()
+    fig.savefig(os.path.join(path, "heatmap_breastcancer.png"))

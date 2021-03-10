@@ -7,8 +7,8 @@ def main():
     gd.get_info_dataframe(working_df)
 
 
-    EDA.get_histograms(working_df)
-    EDA.get_qqplot(working_df)
+    #EDA.get_histograms(working_df)
+    #EDA.get_qqplot(working_df)
     EDA.correlation_matrix(working_df)
 
 
