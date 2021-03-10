@@ -21,5 +21,9 @@ def get_info_dataframe(df):
     with open('dataset_info.txt','w') as out:
       df.info(buf = out)
 
+def get_data_statistics(df):
+
+    df.describe().to_csv('dataset_description.csv')
+
 
 
