@@ -43,13 +43,17 @@ def get_qqplot(df):
             print('Not able to return qqplot')
 
 def correlation_matrix(df):
+    """
+    Get the Perason's correlation coefficients represented in a heatmap
+    :param df: breast cancer dataframe
+    :return: heatmap_breastcancer.png
+    """
     corr = df.corr()
     # Generate a mask for the upper triangle
     mask = np.triu(np.ones_like(corr, dtype=bool))
 
-    f, ax = plt.subplots(figsize=(11, 9))
-    heatmap = sns.heatmap(corr, mask=mask, vmax=.3, center=0,
-                square=True, linewidths=.5, cbar_kws={"shrink": .5})
+    plt.figure(figsize=(30, 30))
+    heatmap = sns.heatmap(corr, vmax=1, square=True, annot=True)
 
     fig = heatmap.get_figure()
     fig.savefig(os.path.join(path, "heatmap_breastcancer.png"))
