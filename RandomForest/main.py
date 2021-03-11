@@ -22,7 +22,8 @@ def main():
     X_train_scaled, X_test_scaled, y_train, y_test = rf.data_preparing(working_df)
     confusion_matrix, cross_val_score, model_accuracy = rf.RandomForestModel(X_train=X_train_scaled, X_test=X_test_scaled, y_train=y_train, y_test=y_test)
 
-    print(f"\nThe confusion matrix of the prediction is: \n {confusion_matrix} \n")
+    print("\nRESULT OF THE CLASSIFICATION OF MALIGN AND BENIGN BREAAST TUMOR USING RANDOM FOREST ALGORITHM: \n")
+    print(f"The confusion matrix of the prediction is: \n {confusion_matrix} \n")
     print(f"The 10-fold cross validation score is {cross_val_score*100:.{2}f} % \n")
     print(f"The model accuracy is {model_accuracy*100:.{2}f} % \n")
 
