@@ -37,7 +37,7 @@ python RandomForest/main.py
 
 ## Conclusions
 
-[x] Confusion matrix
+- [x] Confusion matrix
 
 In order to evaluate how good is the model, we have to see if classifies correctly malign and
 benign tumors. We've got:
@@ -47,11 +47,11 @@ benign tumors. We've got:
 - 86 true negatives
 - 4 false negatives
 
-[x] Cross validation
+- [x] Cross validation
 
 A typical 10-fold cross validation is applied getting 95.31% accuracy
 
-[x] Model accuracy
+- [x] Model accuracy
 
 The model has 95.8% of accuracy in classification
 
