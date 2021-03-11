@@ -1,4 +1,6 @@
-# Random Forest algorithm use case: Breast Cancer Classification
+# Random Forest algorithm 
+
+## Use case: Breast Cancer Classification
 
 Random forests is a supervised learning algorithm. It can be used both for classification 
 and regression. It is also the most flexible and easy to use algorithm. A forest is 
