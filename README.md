@@ -24,14 +24,23 @@ compared to the other non-linear classification algorithms.
 **In this case, we are going to apply Random Forest algorithm to the Breast Cancer dataset 
 available in the sklearn datasets library to classify if it benign or malign tumor.** 
 
-## How to run it:
+## Installation:
 
-In the chosen directory:
+## Install with pypi:
+```
+pip install RandomForest
+```
+
+## Install from source code
 
 ```
 git clone https://github.com/stkobsar/RandomForest.git
 cd RandomForest
-export PYTHONPATH =/path/to/the/project
+python setup.py install
+```
+
+## How to use it
+```
 python RandomForest/main.py 
 ```
 
