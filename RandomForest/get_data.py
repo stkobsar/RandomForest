@@ -1,4 +1,3 @@
-from sklearn.datasets import load_breast_cancer
 import pandas as pd
 import numpy as np
 
